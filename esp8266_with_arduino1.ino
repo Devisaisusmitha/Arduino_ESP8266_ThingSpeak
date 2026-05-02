@@ -3,7 +3,7 @@ String password = "";            // Wi-Fi Password (leave empty if no password) 
 String host = "https://api.thingspeak.com";
 const int httpPort = 80;
 //write API key
-String uri = "/update?api_key=WRITE_YOUR API KEY&field1=0"; // Replace YOUR_WRITE_API_KEY with your actual Write API Key
+String uri = "/update?api_key=YOUR_API_KEY&field1=0"; // Replace YOUR_WRITE_API_KEY with your actual Write API Key
 
 int setupESP8266(void) {
   Serial.begin(115200); // Start the Serial communication at 115200 baud rate
