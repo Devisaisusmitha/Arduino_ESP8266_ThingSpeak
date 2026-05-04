@@ -2,9 +2,11 @@
 
 An IoT system that uses ESP8266 WiFi module with Arduino Uno to upload sensor data to ThingSpeak cloud. This demo reads a potentiometer value, maps it to 0-100, and sends it to ThingSpeak using AT commands.
 
-### **Circuit Diagram**
-![Circuit Diagram](circuit.png)
+### **Demo**
+![Demo](demo.gif)
 
+
+> **Note**: GIF shows Tinkercad simulation. Potentiometer value changes → AT commands sent to ESP8266 → Data uploaded to ThingSpeak. Serial Monitor shows WiFi connection and HTTP request.
 
 ### **How It Works**
 The ESP8266 is a WiFi module controlled by Arduino using AT commands via Serial.
@@ -18,11 +20,6 @@ The ESP8266 is a WiFi module controlled by Arduino using AT commands via Serial.
 7. ThingSpeak stores data and plots real-time graphs
 
 This demonstrates IoT, WiFi communication, AT commands, and cloud data logging.
-
-### **Demo**
-![Demo](demo.gif)
-
-> **Note**: GIF shows Tinkercad simulation. Potentiometer value changes → AT commands sent to ESP8266 → Data uploaded to ThingSpeak. Serial Monitor shows WiFi connection and HTTP request.
 
 
 ### **Components Required**
@@ -80,4 +77,8 @@ File: `esp8266_with_arduino.ino`
 4. **ThingSpeak Limit:** Free account allows 1 update per 15 seconds only.
 5. **API Key Security:** Never upload real API keys to public GitHub. Use YOUR_API_KEY in public repos.
 6. **Tinkercad Limitation:** Real ESP8266 needs separate 3.3V power supply with 300mA current.
+
+
+### **Circuit Diagram**
+![Circuit Diagram](circuit.png)
 
